@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	  <info>
+   <name>Kaja</name>
+   <update version="1.0">
+     <file name="przeturlani.index" url="https://github.com/Kinggred/Przeturlani/blob/master/przeturlani.index" />
+   </update>
+  </info>
+  <element name="Kaja" type="Race" source="Maks" id="ID_MAKS_MAKS_RACE_KAJA">
+    <supports>Kaja</supports>
+    <description>
+            <p class="indent"><strong>Wiek<em></em></strong> Nie mam pomysłu, załóżmy, że kobietom czasu nie liczymy</p>
+			<p class="indent"><strong><em>Ułożenie</em></strong> Tak</p>
+			<p class="indent"><strong><em>Instrumenty</em></strong> Umiesz w nie, więc zagrasz na wszystkim.</p>
+            <p class="indent"><strong><em>Bestia</em></strong> Możesz porozumiewać się ze zwierzętami.</p>
+            <p class="indent"><strong><em>Gadka</em></strong> Dwa razy na krótki odpoczynek możesz uzdrowić kogoś o 1d6 + mod. charyzmy.</p>
+			<p class="indent"><strong><em>Wygadanie</em></strong> Osoby rozmawiające z tobą są zauroczone, masz advantage na testy charyzmy przeciw nim.</p>
+    </description>
+    <rules>
+		<grant type="Size" id="ID_SIZE_MEDIUM" />
+		<grant type="Language" id="ID_LANGUAGE_COMMON" />
+        <select type="Proficiency" name="Musical Instrument (Kaja)" supports="Musical Instrument" number="5" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SPEAK_WITH_ZWIERZ" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_GADKA" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_WYGADANIE" />
+        <select type="Language" name="Language" supports="Standard||Exotic" number="4" />
+        <stat name="dexterity" value="1" />
+        <stat name="wisdom" value="1" />
+        <stat name="charisma" value="2" />
+    </rules>
+  </element>
+
+    <element name="Zwierzęta" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_SPEAK_WITH_ZWIERZ">
+        <description>
+            <p>Możesz porozumiewać się ze zwierzętami.</p>
+        </description>
+        <sheet>
+            <description>Możesz porozumiewać się ze zwierzętami.</description>
+        </sheet>
+    </element>
+
+    <element name="Komplement" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_GADKA">
+        <description>
+            <p>Dwa razy na krótki odpoczynek możesz uzdrowić kogoś o 1d6 + mod. charyzmy.</p>
+        </description>
+        <sheet>
+            <description>Dwa razy na krótki odpoczynek możesz uzdrowić kogoś o 1d6 + mod. charyzmy.</description>
+        </sheet>
+    </element>
+
+    <element name="Wygadanie" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_WYGADANIE">
+        <description>
+            <p>Osoby rozmawiające z tobąsą zauroczone, masz advantage na testy charyzmy przeciw nim.</p>
+        </description>
+        <sheet>
+            <description>Osoby rozmawiające z tobą są zauroczone, masz advantage na testy charyzmy przeciw nim.</description>
+        </sheet>
+    </element>
+
+</elements>

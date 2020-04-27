@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+   <name>KacperM</name>
+   <update version="1.0">
+     <file name="przeturlani.index" url="https://github.com/Kinggred/Przeturlani/blob/master/przeturlani.index" />
+   </update>
+  </info>
+  <element name="Kacper" type="Race" source="Maks" id="ID_MAKS_MAKS_RACE_KACPERMACH">
+    <supports>Kacper</supports>
+    <description>
+      <p class="indent"><strong><em>Age.</em></strong> Thanks to cooking for himself he's able to achieve about 100 years</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Chaotic Evil</p>
+			<p class="indent"><strong><em>Size.</em></strong> Over the top</p>
+            <p class="indent"><strong><em>IKEA Hate</em></strong> Your inner hate to people from IKEA allows you to double the damage dealt.</p>
+            <p class="indent"><strong><em>IKEA social problems</em></strong> You have disadvantage on every charisma check when it comes to comunication with them.</p>
+            <p class="indent"><strong><em>Carpenter</em></strong> Your father is a carpenter and he teached you a couple of things. You still can't use his tools.</p>
+            <p class="indent"><strong><em>Musik</em></strong> Due to your passion to music, if you cant play on something you feel bad and have disadvantage on every performance checks</p>
+            <p class="indent"><strong><em>Inner dilema</em></strong> Without carpenter tools you have -2 to every dexterity check, when you will get some -2 changes to +1, without some kind of musical instrument you got -2 to every charisma check, it changes to +1 when you will get some.</p>
+            <p class="indent"><strong><em>Natural frenemy</em></strong> Thanks to high self esteem you are not affected by any of Wiktor's disadvantages</p>
+    </description>
+    <rules>
+		<grant type="Size" id="ID_SIZE_MEDIUM" />
+		<grant type="Language" id="ID_LANGUAGE_COMMON" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_IKEA_HATE" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_IKEA_SOCIAL" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CARPENTER" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MUSIC" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_INNER_DILEMA" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_FRENEMY" />
+        <select type="Language" name="Language" supports="Standard||Exotic" number="1" />
+        <stat name="constitution" value="2" />
+        <stat name="dexterity" value="1" />
+        <stat name="strength" value="1" />
+        <stat name="charisma" value="-1" />
+    </rules>
+  </element>
+
+    <element name="IKEA guild" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_IKEA_SOCIAL">
+		<description>
+			<p>You have proficiency with the carpenter tools.</p>
+	  	</description>
+	  	<sheet display="true">
+			<description>You have disadvantage on every charisma check with IKEA guild members.</description>
+		  </sheet>
+    </element>
+
+    <element name="Hate" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_IKEA_HATE">
+		  <description>
+			<p>You </p>
+		  </description>
+		  <sheet display="true">
+			<description>You deal double damage to IKEA guild members</description>
+	  	</sheet>
+    </element>
+
+    <element name="Father" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_CARPENTER">
+		  <description>
+			<p>You have proficiency with the carpenter tools.</p>
+		  </description>
+	  	<sheet display="true">
+			<description>You still can't use your father's tools.</description>
+	  	</sheet>
+	  	<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+	  	</rules>
+    </element>
+
+    <element name="Music" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_MUSIC">
+	  	<description>
+			<p> Due to your passion to music, if you cant play on something you feel bad and have disadvantage on every performance checks</p>
+	  	</description>
+	  	<sheet display="true">
+			<description>Without any musical instrument you have -1 to charisma checks and disadvantage on performance checks, when you will get some -1 changes to +1.</description>
+	  	</sheet>
+    </element>
+
+    <element name="Inner dilema" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_INNER_DILEMA">
+	  	<description>
+			<p> Without carpenter tools you have -2 to every dexterity check, when you will get some -2 changes to +1 </p>
+	  	</description>
+	  	<sheet display="true">
+			<description>Without carpenter tools you have -2 to every dexterity check, when you will get some -2 changes to +1.</description>
+	  	</sheet>
+    </element>
+
+    <element name="Natural frenemy" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_NATURAL_FRENEMY">
+	  	<description>
+			<p>  Thanks to high self esteem you are not affected by any of Wiktor's disadvantages.</p>
+	  	</description>
+	  	<sheet display="true">
+			<description> Thanks to high self esteem you are not affected by any of Wiktor's disadvantages.</description>
+	  	</sheet>
+    </element>
+
+</elements>

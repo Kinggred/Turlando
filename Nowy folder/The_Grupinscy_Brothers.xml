@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+   <name>The_Grupinscy_Brothers</name>
+   <update version="1.0">
+     <file name="przeturlani.index" url="https://github.com/Kinggred/Przeturlani/blob/master/przeturlani.index" />
+   </update>
+  </info>
+  <element name="The_Grupinscy_Brothers" type="Race" source="Maks" id="ID_MAKS_MAKS_RACE_THE_GRUPINSCY_BROTHERS">
+    <supports>The_Grupinscy_Brothers</supports>
+    <description>
+      <p class="indent"><strong><em>Ability Score Increase.</em></strong></p>
+      <p class="indent"><strong><em>Age.</em></strong> Thanks to ancient meds they live up to about 150 years</p>
+			<p class="indent"><strong><em>Alignment.</em></strong>Lawful Gut is a natural way for those kind of guys</p>
+			<p class="indent"><strong><em>Size.</em></strong> Just right</p>
+			<p class="indent"><strong><em>Pyrka</em></strong> There is some of the Pozen blood in your vines, you ve natural ability hondling cash, unfortunetly you are greede even to yourself.</p>
+    </description>
+    <rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MINDNECTION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_PYRKA" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_GRUPINSCY_SUBRACE" />
+      <select type="Language" name="Language" supports="Standard||Exotic" number="1" />
+    </rules>
+  </element>
+
+    <element name="Pyrka" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_PYRKA">
+      <description>
+      <p>There is some pozen blood in your vines. You can't be fooled by anyone when it comes to money or anything related. You have natural addvantage when it come to traiding. Bad side is that you are greedy.</p>
+      </description>
+      <sheet>
+        <description>Your bloodline gives you an advantage when it comes to traiding also you can't be fooled when it comes to money.</description>
+      </sheet>
+    </element>
+
+    <element name="Mindnection" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_MINDNECTION">
+      <description>
+      <p>You are born with ability to mindnect to other Grupinski mind. That allows you to send eachother simple messages.</p>
+     </description>
+      <sheet>
+        <description>You are born with ability to mindnect to other Grupinski mind. That allows you to send eachother simple messages.</description>
+     </sheet>
+    </element>
+
+    <element name="Grupinscy brothers" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_GRUPINSCY_SUBRACE">
+      <description>
+      <p>The two main kinds of Grupiński people. Both are dangerous, just in other things</p>
+      </description>
+      <sheet display="false" />
+      <rules>
+      <select type="Sub Race" name="Grupinski Subrace" supports="The Grupinscy Brothers" />
+      </rules> 
+    </element>
+
+    <element name="Maksymilian" type="Sub Race" source="Maks" id="ID_SUB_RACE_MAKS">
+     <supports>The Grupinscy Brothers</supports>
+     <description>
+      <p>You know a bit of everything, almost killed yourself at least twice and are a bit of pyromaniac.</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 1, your inteligence decreases by 1, you can increase your ability scores by a sum of 3.<br/>
+      </p>
+     </description>
+     <sheet display="false" />
+     <rules>
+      <select type="Racial Trait" name="Ability Score Increase (Maks)" supports="Maksymilian" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (Maks)" supports="Maksymilian" number="1" />
+      <select type="Racial Trait" name="Ability Score Increase (Maks)" supports="Maksymilian" number="1" />
+      <stat name="charisma" value="1" />
+      <stat name="Intelligence" value="-1" />
+      <select type="Proficiency" name="Skill Proficiency +2 (Maks)" supports="Skill" number="1" />
+      <stat name="innate speed" value="35" bonus="base" />
+     </rules>
+    </element>
+
+  <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPIN_STRENGTH">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Strength score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="strength" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPIN_DEXTERITY">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINA_DEXTERITY">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Dexterity score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPIN_CONSTITUTION">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINA_CONSTITUTION">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Constitution score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="constitution" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPIN_INTELLIGENCE">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Intelligence score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPIN_WISDOM">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINA_WISDOM">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Wisdom score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPIN_CHARISMA">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINA_CHARISMA">
+    <compendium display="false" />
+    <supports>Maksymilian</supports>
+    <description>
+      <p>Your Charisma score increases by 1.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="charisma" value="1" alt="Maksymilian" />
+    </rules>
+  </element>
+  
+  <element name="Stanislaw" type="Sub Race" source="Maks" id="ID_SUB_RACE_STANISLAW">
+      <supports>The Grupinscy Brothers</supports>
+      <description>
+      <p>Born to do math, you are either master of something or can't do that completly</p>
+      <p>
+        <span class="feature">Ability Score Increase.</span>Your Charisma score decreases by 1, your inteligence score increase by 2 you can choose witch ability score you want to increase by 2.<br/>
+      </p>
+     </description>
+     <sheet display="false" />
+     <rules>
+      <stat name="charisma" value="-1" />
+      <stat name="wisdom" value="-1" />
+      <stat name="Intelligence" value="2" />
+      <select type="Racial Trait" name="Ability Score Increase (Stachu)" supports="Stanislaw" number="1" />
+      <stat name="innate speed" value="25" bonus="base" />
+     </rules>
+  </element>
+
+  <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINS_WISDOM">
+    <compendium display="false" />
+    <supports>Stanislaw</supports>
+    <description>
+      <p>Your Wisdom score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="wisdom" value="2" alt="Stanislaw" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINS_INTELLIGENCE">
+    <compendium display="false" />
+    <supports>Stanislaw</supports>
+    <description>
+      <p>Your Intelligence score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="intelligence" value="2" alt="Stanislaw" />
+    </rules>
+  </element>
+  <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Maks" id="ID_RACE_VARIANT_GRUPINS_DEXTERITY">
+    <compendium display="false" />
+    <supports>Stanislaw</supports>
+    <description>
+      <p>Your Dexterity score increases by 2.</p>
+    </description>
+    <sheet display="false" />
+    <rules>
+      <stat name="dexterity" value="2" alt="Stanislaw" />
+    </rules>
+  </element>
+
+</elements>

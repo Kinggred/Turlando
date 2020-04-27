@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+   <info>
+   <name>Zuzanna</name>
+   <update version="1.0">
+     <file name="przeturlani.index" url="https://github.com/Kinggred/Przeturlani/blob/master/przeturlani.index" />
+   </update>
+  </info>
+  <element name="Zuzanna" type="Race" source="Maks" id="ID_MAKS_MAKS_RACE_ZUZIA">
+    <supports>Zuzanna</supports>
+    <description>
+            <p class="indent"><strong>Wiek<em></em></strong> Nie mam pomysłu, załóżmy, że kobietom czasu nie liczymy</p>
+			<p class="indent"><strong><em>Ułożenie</em></strong> Tak</p>
+			<p class="indent"><strong><em>Human</em></strong> Humanistką się jest, a nie bywa.</p>
+            <p class="indent"><strong><em>Maska</em></strong> Wieloletnie popierdzielanie wraz z innymi harcerzami sprawiło, że jesteś wilkiem w owczej skórze. Gdy tylko zostaną Ci zdjęte okulary, zmieniasz się w prawdziwą bestię. Bez nich twój modyfikator do charyzmy wynosi -4 natomiast do siły +4.</p>
+            <p class="indent"><strong><em>Szyszkojad</em></strong> Jesteś w stanie znaleść pożywienie w każdym miejscu</p>
+			<p class="indent"><strong><em>Sen</em></strong> Twój krótki odpoczynek jest naprawdę krótki, łącząc to ze zdolnością zaśnięcia wszędzie, jesteś w stanie usiąść pod ścianą na 5 minut by czuć się zregerenowana.</p>
+            <p class="indent"><strong><em>Ognisko</em></strong> Jesteś w stanie zapalić ognisko siłą woli.</p>
+    </description>
+    <rules>
+		<grant type="Size" id="ID_SIZE_MEDIUM" />
+		<grant type="Language" id="ID_LANGUAGE_COMMON" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_HUMANA" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MASK" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SZYSZKOJAD" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SEN" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_OGNISKO" />
+        <select type="Language" name="Language" supports="Standard||Exotic" number="4" />
+        <stat name="dexterity" value="1" />
+        <stat name="wisdom" value="-1" />
+        <stat name="charisma" value="2" />
+    </rules>
+  </element>
+
+    <element name="Human" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_HUMANA">
+    <description>
+      <p>Humanistką się jest, a nie bywa.</p>
+    </description>
+	<sheet display="true">
+		<description>Humanistką się jest, a nie bywa.</description>
+	</sheet>
+    </element>
+
+    <element name="Maska" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_MASK">
+    <description>
+      <p>Gdy tylko zostaną Ci zdjęte okulary, zmieniasz się w prawdziwą bestię. Bez nich twój modyfikator do charyzmy wynosi -4 natomiast do siły +4.</p>
+    </description>
+	<sheet display="true">
+		<description>Gdy tylko zostaną Ci zdjęte okulary, zmieniasz się w prawdziwą bestię. Bez nich twój modyfikator do charyzmy wynosi -4 natomiast do siły +4.</description>
+	</sheet>
+    </element>
+
+    <element name="Szyszkojad" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_SZYSZKOJAD">
+    <description>
+      <p>Jesteś w stanie znaleść pożywienie w każdym miejscu.</p>
+    </description>
+	<sheet display="true">
+		<description>Jesteś w stanie znaleść pożywienie w każdym miejscu.</description>
+	</sheet>
+    </element>
+
+   <element name="Sen" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_SEN">
+    <description>
+      <p>Jesteś w stanie usiąść pod ścianą na 5 minut by czuć się zregerenowana.</p>
+    </description>
+	  <sheet display="true">
+	   	<description>Jesteś w stanie usiąść pod ścianą na 5 minut by czuć się zregerenowana.</description>
+  	</sheet>
+   </element>
+
+  <element name="Ognisko" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_OGNISKO">
+    <description>
+      <p>Jesteś w stanie zapalić ognisko siłą woli.</p>
+    </description>
+	  <sheet display="true">
+		  <description>Jesteś w stanie zapalić ognisko siłą woli.</description>
+	  </sheet>
+  </element>
+
+</elements>

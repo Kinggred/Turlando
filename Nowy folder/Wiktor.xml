@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+   <name>Wiktor</name>
+   <update version="1.0">
+     <file name="przeturlani.index" url="https://github.com/Kinggred/Przeturlani/blob/master/przeturlani.index" />
+   </update>
+  </info>
+  <element name="Wiktor" type="Race" source="Maks" id="ID_MAKS_MAKS_RACE_WIKTOR">
+    <supports>Wiktor</supports>
+    <description>
+      <p class="indent"><strong><em>Age.</em></strong> Thanks to ancient fast food you live up to about 90 years</p>
+			<p class="indent"><strong><em>Alignment.</em></strong>He's a Chaotic Neutral type of a man.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Almost right</p>
+            <p class="indent"><strong><em>Naturally iritating</em></strong> Due to your born ability to iritate people you have disadvantage on almost all charisma check, aura that is near you works also on your party, anybody that knows you and is near you has an -1 to every charisma check. </p>
+            <p class="indent"><strong><em>Iritation</em></strong> Every person speaking to you has to do an 8 + prof. bonus + Cha. modifier check if result will be lower than your charisma score that creature has to take 1d4 psychical damage, each time these happen your target likes you less. Works only if you want it to work. </p>
+			<p class="indent"><strong><em>Innate deception</em></strong> Due to things written before you have constant advantage on deception checks</p>
+            <p class="indent"><strong><em>Minion</em></strong> You have an invisible minion that only you know about. Once per short rest you can ask it to do something (minion is like an invisible human thats capable of doing human things) that thing can't deal any direct damage to anybody.</p>
+    </description>
+    <rules>
+		<grant type="Size" id="ID_SIZE_SMALL" />
+		<grant type="Language" id="ID_LANGUAGE_COMMON" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_MINION" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_NATURAL_IRYTATION" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_IRYTATION" />
+        <grant type="Racial Trait" id="ID_RACIAL_TRAIT_INNATE_DECEPTION" />
+        <select type="Language" name="Language" supports="Standard||Exotic" number="2" />
+        <stat name="constitution" value="2" />
+        <stat name="strength" value="2" />
+        <stat name="charisma" value="-1" />
+    </rules>
+  </element>
+
+	<element name="Minion" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_MINION">
+		<description>
+			<p>You have an invisible minion that only you know about. Once per short rest you can ask it to do something (minion is like an invisible human thats capable of doing human things) that thing can't deal any direct damage to anybody.</p>
+		</description>
+		<sheet display="true">
+			<description>You have invisible minion that only you know about. Once per short rest it can do something for you, but it cant deal direct damage.</description>
+		</sheet>
+    </element>
+
+    <element name="Deception" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_INNATE_DECEPTION">
+		<description>
+			<p>You have advantage in the Deception skill.</p>
+		</description>
+		<sheet display="true">
+			<description>You have advantage in deception checks.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
+    </element>
+
+   <element name="Natural irytation" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_NATURAL_IRYTATION">
+		<description>
+			<p>Due to your born ability to iritate people you have disadvantage on almost all charisma check, aura that is near you works also on your party, anybody that knows you and is near you has an -1 to every charisma check.</p>
+		</description>
+		<sheet display="true">
+			<description>You have disadvantage on almost all charisma check, anybody that knows you and is near you has an -1 to every charisma check.</description>
+		</sheet>
+    </element>
+
+    <element name="Irytation" type="Racial Trait" source="Maks" id="ID_RACIAL_TRAIT_IRYTATION">
+		<description>
+			<p>Every person speaking to you has to do an 8 + prof. bonus + Cha. modifier check every 5 min., if result will be lower than your charisma score that creature has to take 1d4 psychical damage, each time these happen your target likes you less. Works only if you want it to work. </p>
+		</description>
+		<sheet display="true">
+			<description>Every person speaking to you has to do an 8 + prof. bonus + Cha. modifier check every 5 min., if result will be lower than your charisma score that creature has to take 1d4 psychical damage, each time these happen your target likes you less. Works only if you want it to work.</description>
+		</sheet>
+    </element>
+
+</elements>
